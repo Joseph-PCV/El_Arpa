@@ -1,0 +1,93 @@
+/* ============================================================
+   EL ARPA – responsive.css
+   Media queries para tablet y móvil
+   ============================================================ */
+
+/* ── Tablet (≤ 900px) ───────────────────────────────────────── */
+@media (max-width: 900px) {
+
+  /* Navbar */
+  .nav-links,
+  .btn-reserva { display: none; }
+  .hamburger   { display: flex; }
+  .nav-container { gap: 0; }
+
+  /* Nosotros */
+  .nosotros-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .nosotros-img { aspect-ratio: 16/9; }
+  .nosotros-badge { bottom: -0.75rem; right: 0.5rem; }
+
+  /* Sedes */
+  .sedes-grid { grid-template-columns: 1fr; }
+
+  /* Galería */
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gal-tall  { grid-row: unset; aspect-ratio: 1; }
+  .gal-wide  { grid-column: span 2; }
+
+  /* Contacto */
+  .contacto-grid { grid-template-columns: 1fr; }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .footer-brand { grid-column: span 2; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+}
+
+/* ── Móvil (≤ 600px) ────────────────────────────────────────── */
+@media (max-width: 600px) {
+
+  /* Hero */
+  .hero-stats { gap: 0.6rem; }
+  .stat-number { font-size: 1.1rem; }
+  .hero-actions { flex-direction: column; align-items: center; }
+  .hero-actions .btn-primary,
+  .hero-actions .btn-ghost { width: 100%; max-width: 280px; text-align: center; }
+
+  /* Menú */
+  .menu-grid { grid-template-columns: 1fr; }
+
+  /* Galería */
+  .galeria-grid { grid-template-columns: 1fr; }
+  .gal-wide { grid-column: span 1; aspect-ratio: 1; }
+
+  /* Testimonios */
+  .testimonios-grid { grid-template-columns: 1fr; }
+
+  /* Formulario */
+  .contacto-form-wrap { padding: 1.5rem; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-brand { grid-column: span 1; }
+
+  /* Nosotros features */
+  .nosotros-features li { flex-direction: column; gap: 0.5rem; }
+
+  /* WhatsApp FAB (más abajo para no tapar content) */
+  .whatsapp-fab { bottom: 1.25rem; right: 1.25rem; width: 52px; height: 52px; }
+}
+
+/* ── Reducción de movimiento ───────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* ── Alta resolución / pantallas grandes ─────────────────────── */
+@media (min-width: 1400px) {
+  :root { --container: 1300px; }
+  .menu-grid { grid-template-columns: repeat(3, 1fr); }
+}

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="El Arpa – Leña y Tradición. Restaurante de gastronomía llanera y colombiana en Tuluá, Valle del Cauca. Chicharrón, carne a la llanera, punta de anca y más." />
+  <title>El Arpa | Leña y Tradición – Tuluá</title>
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVEGACIÓN
+  ============================================================ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menú principal">
+    <div class="nav-container">
+      <!-- Logo -->
+      <a href="#inicio" class="nav-logo" aria-label="El Arpa – inicio">
+        <img src="assets/images/Logo-Arpa.png" alt="Logo El Arpa" class="logo-icon" />
+        <div class="logo-text">
+          
+        </div>
+      </a>
+
+      <!-- Links de escritorio -->
+      <ul class="nav-links" role="list">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#testimonios">Reseñas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <!-- Botón reserva escritorio -->
+      <a href="https://wa.me/573209601716" target="_blank" rel="noopener" class="btn-reserva">
+        Reservar mesa
+      </a>
+
+      <!-- Botón hamburguesa móvil -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menú móvil" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#inicio"   class="mobile-link">Inicio</a></li>
+        <li><a href="#nosotros" class="mobile-link">Nosotros</a></li>
+        <li><a href="#menu"     class="mobile-link">Menú</a></li>
+        <li><a href="#galeria"  class="mobile-link">Galería</a></li>
+        <li><a href="#testimonios" class="mobile-link">Reseñas</a></li>
+        <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+        <li>
+          <a href="https://wa.me/573209601716" target="_blank" rel="noopener" class="mobile-link cta">
+            📞 Reservar mesa
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="inicio" aria-label="Bienvenida">
+    <!-- Imagen de fondo: coloca en assets/images/hero-bg.jpg una foto del restaurante o de la carne asada -->
+    <div class="hero-bg" style="background-image: url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAH9Hxn4k6O891Txg4DFjX52U4NPWM6NwmJvr0KUc9B4-Jkcnb_s-g3j_W5iRxRZS2J8cUhPWMHbvqofrppH_pW10TtuM22MOOIcWlVNmUZJTEHWajYrA_qtFdR8UfaOx122PAItHgOV4wUW=s1360-w1360-h1020-rw');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-eyebrow">🔥 Tuluá, Valle del Cauca</p>
+      <h1 class="hero-title">
+        Sabor que<br />
+        <em>lleva historia</em>
+      </h1>
+      <p class="hero-desc">
+        Gastronomía llanera y colombiana preparada a leña.<br />
+        Chicharrón, carnes, tradición y buen ambiente desde el corazón del Valle.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary">Ver el menú</a>
+        <a href="#galeria" class="btn-ghost">Ver galería</a>
+      </div>
+
+      <!-- Estadísticas rápidas -->
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">+ 40k</span>
+          <span class="stat-label">Seguidores</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">2</span>
+          <span class="stat-label">Sedes</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">⭐ 4.8</span>
+          <span class="stat-label">Calificación</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flecha de scroll -->
+    <a href="#nosotros" class="hero-scroll" aria-label="Ir a la siguiente sección">
+      <span class="scroll-arrow">↓</span>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       NOSOTROS
+  ============================================================ -->
+  <section class="section nosotros" id="nosotros" aria-labelledby="nosotros-title">
+    <div class="container">
+      <div class="nosotros-grid">
+
+        <!-- Imagen / decoración -->
+        <div class="nosotros-img-wrap reveal">
+          <!--
+            Coloca en assets/images/nosotros.jpg una foto interior del restaurante
+            o de la parrilla encendida con leña.
+          -->
+          <div class="nosotros-img" style="background-image: url('https://www.miguelvergara.com/actualidad/wp-content/uploads/2023/06/carne-para-parrillada-1200x980.jpg');"></div>
+          <div class="nosotros-badge">
+            <span class="badge-icon"></span>
+            <span>Leña &amp; Tradición</span>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="nosotros-text reveal">
+          <p class="section-eyebrow">¿Quiénes somos?</p>
+          <h2 class="section-title" id="nosotros-title">
+            Un pedacito de los<br /><em>Llanos en Tuluá</em>
+          </h2>
+          <p class="body-text">
+            El Arpa nació con el sueño de traer la auténtica gastronomía llanera al corazón 
+            del Valle del Cauca. Cada plato es preparado con leña y amor, usando recetas 
+            tradicionales que celebran nuestra identidad colombiana.
+          </p>
+          <p class="body-text">
+            Somos el restaurante que <strong>Tulio Recomienda</strong> y uno de los 
+            50 mejores de Colombia. Aquí encontrarás chicharrón a otro nivel, carne 
+            mamona, punta de anca y mucho más, rodeado de música y buena compañía.
+          </p>
+
+          <ul class="nosotros-features" role="list">
+            <li>
+              <span class="feat-icon"></span>
+              <div>
+                <strong>Cocina a leña</strong>
+                <p>Sabor auténtico, como en las fincas de los Llanos Orientales.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-icon"></span>
+              <div>
+                <strong>Ingredientes frescos</strong>
+                <p>Carnes seleccionadas y productos de proveedores locales.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feat-icon"></span>
+              <div>
+                <strong>Ambiente &amp; música en vivo</strong>
+                <p>Fines de semana con shows especiales y buena vibra.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MENÚ / PLATOS ESTRELLA
+  ============================================================ -->
+  <section class="section menu-section" id="menu" aria-labelledby="menu-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Lo que ofrecemos</p>
+        <h2 class="section-title" id="menu-title">Nuestros platos<br /><em>más queridos</em></h2>
+        <p class="section-desc">
+          De la leña directo a tu mesa. Sabores que enamoran a locales y visitantes.
+        </p>
+      </div>
+
+      <div class="menu-grid">
+
+        <!-- Plato 1 -->
+        <article class="menu-card reveal" aria-label="Chicharrón Llanero">
+          <!--
+            Imagen: assets/images/plato-chicharron.jpg
+          -->
+          <div class="menu-card-img" style="background-image: url('https://i.ytimg.com/vi/6eI0gsy-TR8/maxresdefault.jpg');">
+            <span class="menu-badge">⭐ Estrella</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Chicharrón Llanero</h3>
+            <p>El chicharrón que está a otro nivel. Crujiente por fuera, jugoso por dentro, cocinado a leña con la técnica tradicional llanera.</p>
+            <span class="menu-tag">🔥 El más pedido</span>
+          </div>
+        </article>
+
+        <!-- Plato 2 -->
+        <article class="menu-card reveal" aria-label="Carne Mamona">
+          <div class="menu-card-img" style="background-image: url('https://elrinconcolombiano.com/wp-content/uploads/2020/11/Mamona-o-ternera-a-la-llanera-receta.jpg');">
+            <span class="menu-badge">🇨🇴 Tradicional</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Carne Mamona</h3>
+            <p>La auténtica carne a la llanera, asada lentamente sobre leña. Sabor inigualable que representa nuestra identidad colombiana.</p>
+            <span class="menu-tag">🪵 A la leña</span>
+          </div>
+        </article>
+
+        <!-- Plato 3 -->
+        <article class="menu-card reveal" aria-label="Punta de Anca">
+          <div class="menu-card-img" style="background-image: url('https://countryspizza.com.co/wp-content/uploads/2020/08/DSC08149.jpg');">
+            <span class="menu-badge">🥩 Premium</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Punta de Anca</h3>
+            <p>Corte seleccionado, marinado con especias y asado a la perfección. Una experiencia gastronómica que no olvidarás.</p>
+            <span class="menu-tag">✨ Selecto</span>
+          </div>
+        </article>
+
+        <!-- Plato 4 -->
+        <article class="menu-card reveal" aria-label="New York Angus">
+          <div class="menu-card-img" style="background-image: url('https://gestion.pe/resizer/TQZHVNXrCjk6qus9m4KJ3UiG54g=/1200x675/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/ZO54Y765PZDFTII4QU4PTYQ7IA.jpg');">
+            <span class="menu-badge">👑 Especial</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>New York Angus 1 kg</h3>
+            <p>35 días de maduración. Un kilo de pura carne Angus, el recomendado del chef para los amantes de los grandes cortes.</p>
+            <span class="menu-tag">🏆 Recomendado</span>
+          </div>
+        </article>
+
+        <!-- Plato 5 -->
+        <article class="menu-card reveal" aria-label="Frijolada">
+          <div class="menu-card-img" style="background-image: url('https://caldoparao.com/wp-content/uploads/2020/06/MG_1142.Bandeja-Paisa-300x267.jpg');">
+            <span class="menu-badge">❤️ Favorito</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Frijolada Criolla</h3>
+            <p>¿A quién no le puede faltar el frijolito a la semana? Disponible miércoles y viernes. Un clásico del almuerzo colombiano.</p>
+            <span class="menu-tag">🫘 Mié &amp; Vie</span>
+          </div>
+        </article>
+
+        <!-- Plato 6 -->
+        <article class="menu-card reveal" aria-label="Picada Colombiana">
+          <div class="menu-card-img" style="background-image: url('https://i.pinimg.com/1200x/17/06/1b/17061b1b819eaf2f4ac8ad2a721c2c06.jpg');">
+            <span class="menu-badge">🎉 Grupal</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Picada Colombiana</h3>
+            <p>Para compartir en familia o con amigos. Chicharrón, chorizo, morcilla, papa criolla y más. El plan perfecto para el fin de semana.</p>
+            <span class="menu-tag">👨‍👩‍👧‍👦 Para compartir</span>
+          </div>
+        </article>
+
+      </div><!-- /menu-grid -->
+
+      <div class="menu-cta reveal">
+        <p>¿Quieres ver la carta completa o hacer un pedido?</p>
+        <a href="https://wa.me/573209601716" target="_blank" rel="noopener" class="btn-primary">
+          📲 Pedir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEDES
+  ============================================================ -->
+  <section class="section sedes-section" aria-labelledby="sedes-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">¿Dónde encontrarnos?</p>
+        <h2 class="section-title" id="sedes-title">Nuestras <em>sedes</em></h2>
+      </div>
+
+      <div class="sedes-grid">
+        <div class="sede-card reveal">
+          <div class="sede-icon"></div>
+          <h3>Tuluá – Valle del Cauca</h3>
+          <p>Cra. 40 #24-32 (Carrera 40)<br />Tuluá, Valle del Cauca, Colombia</p>
+          <p class="sede-tel"> <a href="tel:+573209601716">320 960 1716</a></p>
+          <a href="https://maps.google.com/?q=Cra.+40+%2324-32+Tulu%C3%A1+Valle+del+Cauca" target="_blank" rel="noopener" class="btn-outline">Ver en Maps</a>
+        </div>
+        <div class="sede-card reveal">
+          <div class="sede-icon"></div>
+          <h3>Armenia – Quindío</h3>
+          <p>Armenia – Pereira, Km 2<br />Armenia, Salento, Quindío, Colombia</p>
+          <p class="sede-tel"> <a href="tel:+573117043142">311 704 3142</a></p>
+          <a href="https://maps.google.com/?q=Armenia+Quindio+El+Arpa+restaurante" target="_blank" rel="noopener" class="btn-outline">Ver en Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALERÍA
+  ============================================================ -->
+  <section class="section galeria-section" id="galeria" aria-labelledby="galeria-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Momentos</p>
+        <h2 class="section-title" id="galeria-title">Nuestra <em>galería</em></h2>
+        <p class="section-desc">Cada visita es una experiencia única. ¡Ven y crea la tuya!</p>
+      </div>
+
+      <!-- Coloca fotos reales del restaurante en assets/images/ con los nombres indicados -->
+      <div class="galeria-grid reveal">
+        <div class="gal-item gal-tall"  style="background-image: url('https://scontent.fclo15-1.fna.fbcdn.net/v/t1.6435-9/151328064_467072864664740_1193280902796242523_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=3a1ebe&_nc_ohc=tWMasHgdfhEQ7kNvwEFdefp&_nc_oc=Adr8lKZze1ZxscSy5rgCt03pBckKqXniz1EpUyXB6yD8ozfm5vU1O-rmFDX8IdjUxezKEj5QNAkEGskI_9xwupHt&_nc_zt=23&_nc_ht=scontent.fclo15-1.fna&_nc_gid=4E5PbyaWwnhkZ7drNyx4Bw&_nc_ss=7b2a8&oh=00_Af55eS-6Ijft1w_StVgXnuJw_7OJyhuVIDlT7S6ZeKO6Gg&oe=6A2F785C');" role="img" aria-label="Ambiente del restaurante El Arpa"></div>
+        <div class="gal-item"           style="background-image: url('https://i.pinimg.com/736x/24/af/f1/24aff163a1a037f04d1c74a4ee92a0bf.jpg');" role="img" aria-label="Chicharrón llanero"></div>
+        <div class="gal-item"           style="background-image: url('https://i.pinimg.com/1200x/c3/31/62/c33162c67a598e596c11f0762468fc6d.jpg');" role="img" aria-label="Carne a la leña"></div>
+        <div class="gal-item gal-wide"  style="background-image: url('https://i.pinimg.com/1200x/8f/ea/0a/8fea0a30e6e84988b7ad4fb99ad11c4b.jpg');" role="img" aria-label="Picada colombiana"></div>
+        <div class="gal-item"           style="background-image: url('https://i.pinimg.com/736x/dc/6b/dd/dc6bddfb875b6faa1e7fabfe1f1da7dd.jpg');" role="img" aria-label="Punta de anca"></div>
+        <div class="gal-item"           style="background-image: url('https://i.pinimg.com/736x/12/99/51/1299517ad21f205df5ebb06fcc7ddc07.jpg');" role="img" aria-label="Música en vivo"></div>
+      </div>
+
+      <div class="galeria-social reveal">
+        <p>¡Síguenos en Instagram y etiquétanos en tu visita!</p>
+        <a href="https://www.instagram.com/elarparestaurante/" target="_blank" rel="noopener" class="btn-outline">
+          📸 @elarparestaurante
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIOS
+  ============================================================ -->
+  <section class="section testimonios-section" id="testimonios" aria-labelledby="testimonios-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Lo que dicen nuestros clientes</p>
+        <h2 class="section-title" id="testimonios-title">Reseñas <em>reales</em></h2>
+      </div>
+
+      <div class="testimonios-grid">
+
+        <blockquote class="testimonio-card reveal">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"Me gustó mucho el lugar. Fui porque lo vi en Tulio Recomienda. La carne mamona estaba espectacular y la atención fue excelente."</p>
+          <footer>
+            <span class="testi-name">— Visitante en Tuluá</span>
+            <span class="testi-source">carta.menu</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonio-card reveal">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"Excelente comida, atención impecable. Comida tradicional y auténtica de parrilladas a la llanera. Me sorprendió la variedad y el sabor."</p>
+          <footer>
+            <span class="testi-name">— Cliente frecuente</span>
+            <span class="testi-source">TripAdvisor</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonio-card reveal">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"La calidad de la carne es notable, los precios son justos y el servicio muy bueno. Sin duda el mejor restaurante de su estilo en la región."</p>
+          <footer>
+            <span class="testi-name">— Juan C. Gómez</span>
+            <span class="testi-source">Google</span>
+          </footer>
+        </blockquote>
+
+        <blockquote class="testimonio-card reveal">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <p>"El chicharrón está a otro nivel. Fui con la familia y todos quedamos felices. ¡Ya queremos volver! Recomendado 100%."</p>
+          <footer>
+            <span class="testi-name">— Ana M. Ríos</span>
+            <span class="testi-source">Facebook</span>
+          </footer>
+        </blockquote>
+
+      </div><!-- /testimonios-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACTO
+  ============================================================ -->
+  <section class="section contacto-section" id="contacto" aria-labelledby="contacto-title">
+    <div class="container">
+      <div class="contacto-grid">
+
+        <!-- Info -->
+        <div class="contacto-info reveal">
+          <p class="section-eyebrow">Contáctanos</p>
+          <h2 class="section-title" id="contacto-title">¿Tienes alguna<br /><em>pregunta?</em></h2>
+          <p class="body-text">Escríbenos, llámanos o visítanos. Estamos listos para atenderte con la misma calidez que ponemos en cada plato.</p>
+
+          <ul class="contact-list" role="list">
+            <li>
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>Tuluá</strong>
+                <p>Cra. 40 #24-32, Tuluá, Valle del Cauca</p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">📍</span>
+              <div>
+                <strong>Armenia</strong>
+                <p>Km 2 Vía Armenia–Pereira, Quindío</p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">📞</span>
+              <div>
+                <strong>Tuluá</strong>
+                <p><a href="tel:+573209601716">+57 320 960 1716</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">📞</span>
+              <div>
+                <strong>Armenia</strong>
+                <p><a href="tel:+573117043142">+57 311 704 3142</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="ci-icon">📸</span>
+              <div>
+                <strong>Instagram</strong>
+                <p><a href="https://www.instagram.com/elarparestaurante/" target="_blank" rel="noopener">@elarparestaurante</a></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Formulario -->
+        <div class="contacto-form-wrap reveal">
+          <form class="contacto-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autocomplete="name" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required autocomplete="email" />
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn-primary btn-full" id="submitBtn">
+              Enviar mensaje
+            </button>
+            <div class="form-success" id="formSuccess" aria-live="polite" hidden>
+              ✅ ¡Mensaje enviado! Nos pondremos en contacto pronto.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Marca -->
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo" aria-label="El Arpa inicio">
+            <span class="logo-icon">🎵</span>
+            <div class="logo-text">
+              <span class="logo-main">El Arpa</span>
+              <span class="logo-sub">Leña &amp; Tradición</span>
+            </div>
+          </a>
+          <p>Gastronomía llanera y colombiana preparada con leña y amor desde Tuluá, Valle del Cauca.</p>
+          <!-- Redes sociales -->
+          <div class="social-links" role="list" aria-label="Redes sociales">
+            <a href="https://www.facebook.com/p/El-Arpa-Tulu%C3%A1-100052388635085/" target="_blank" rel="noopener" role="listitem" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/elarparestaurante/" target="_blank" rel="noopener" role="listitem" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@elarpatulua" target="_blank" rel="noopener" role="listitem" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.84 1.56V6.79a4.85 4.85 0 01-1.07-.1z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Links rápidos -->
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul role="list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#testimonios">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Horarios -->
+        <div class="footer-horarios">
+          <h4>Horarios</h4>
+          <ul role="list">
+            <li><span>Lunes – Viernes</span><span>12:00 – 21:00</span></li>
+            <li><span>Sábado</span><span>11:00 – 22:00</span></li>
+            <li><span>Domingo</span><span>11:00 – 20:00</span></li>
+          </ul>
+          <p class="horario-nota">* Música en vivo los fines de semana</p>
+        </div>
+
+      </div><!-- /footer-grid -->
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> El Arpa – Leña y Tradición. Tuluá, Valle del Cauca, Colombia.</p>
+        <p>Hecho con ❤️ en Colombia 🇨🇴</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE DE WHATSAPP
+  ============================================================ -->
+  <a
+    href="https://wa.me/573209601716?text=Hola%2C%20me%20gustar%C3%ADa%20hacer%20una%20reserva%20en%20El%20Arpa%20Tulu%C3%A1"
+    target="_blank"
+    rel="noopener"
+    class="whatsapp-fab"
+    aria-label="Contactar por WhatsApp"
+  >
+    <!-- Ícono SVG de WhatsApp -->
+    <svg viewBox="0 0 24 24" fill="currentColor" width="30" height="30" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="fab-tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- Script principal -->
+  <script src="js/script.js"></script>
+</body>
+</html>
